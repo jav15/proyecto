@@ -1,0 +1,23 @@
+<h1>Listado de productos</h1>
+<h2><%= icon('fas', 'flag') %> </h2>
+<table>
+  <tr>
+  <thead>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+  </thead>
+  </tr>
+  <% @products.each do |product| %>
+  <tr>
+      <td><%= product.name %></td>
+      <td><%= product.description %></td>
+      <td><%= product.price %></td>
+      <td>
+        <%= link_to "Mostrar" %>
+        <%= link_to "Editar", edit_product_path(product) %>
+        <%= link_to "Eliminar", product, method: :delete, data: {confirm:"Deseas eliminar este articulo?"} %>
+      </td>
+  </tr>
+  <% end %>
+</table>
