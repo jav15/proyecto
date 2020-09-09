@@ -170,7 +170,14 @@
  .section-home1{
  	margin-top: 80px;
  	text-align: center;
-
+  margin-bottom: 60px;
+ }
+ .title-w{
+   font-weight: 400!important;
+   font-family: 'Rubik', sans-serif;
+ }
+ .sub-w{
+   padding: 20px; text-align: justify;
  }
  .hr-sect {
  	display: flex;
@@ -194,7 +201,7 @@
  }
  .row_home2{
  	margin-left: 0px;
- 	margin-right: 0px;
+ 	margin-right: 0px!important;
  }
  .div-sect2{
  	background-color: #fff;
@@ -208,6 +215,7 @@
  .img-home2{
  	margin-bottom: 10px;
  	margin-top: 15px;
+  max-width: 200px;
  	height: 200px;
  	width: 80%;
  	border-radius: 50%;
@@ -216,7 +224,13 @@
  .margin-no10{
  padding-left: 0px!important;
  }
-
+.icon_count{
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.col-md-5-2{
+  width: 50%!important;
+}
 
  /* EFECTO PARALLAX */
  .container_parallax {
@@ -248,7 +262,7 @@
      min-height: 90vh;
  	background:rgba(25, 25, 25, 0.35);
  	color:#fff;
- 	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+ 	box-shadow:0 5px 5px 3px rgba(41, 41, 41, 0.4);
  }
  .btn-danger-intro{
      margin-top: 62px;
@@ -256,10 +270,12 @@
      color: #fff;
      background-color: #dc3545;
      border-color: #dc3545;
-     padding-left: 38px;
-     padding-right: 38px;
-     border-color: #dc3545;
-     border-radius: 35px;
+     padding-left: 58px;
+    padding-right: 58px;
+    border-color: #dc3545;
+    border-radius: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
  }
  /* Padding de boton y titulo intro 2 */
  .p-d2{
@@ -269,6 +285,9 @@
  .h5-d2{
      font-weight: 700;
      margin-top: 10px;
+ }
+ .h5-d2-2{
+   margin-top: 30px;
  }
 
  .card-img {
@@ -287,7 +306,6 @@
  /* SIGUIENTE SECCION COUNTERS */
  .section_count1{
    padding-top: 90px;
-     padding-bottom: 90px;
      background-color: #ffffff;
      text-align: center;
  }
@@ -316,11 +334,17 @@
  }
  .p_company{
    color:#fff;
-     text-align: right;
-
+   text-align: right;
+   font-size: 26px;
  }
  .degrado_sec{
-   padding: 70px; background: linear-gradient(45deg, #dbd4b8, #25aab2);
+   padding-top: 70px;
+   padding-bottom: 90px;
+   background: linear-gradient(45deg, #a674ff, #237cbe);
+ }
+ .share_div{
+   padding-top: 70px;
+   padding-bottom: 70px;
  }
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);
 
@@ -1467,25 +1491,11 @@ input[type="range"] {
 .modal-dialog, .modal-content {
   height: 100%;
 }
-
-.modal-dialog .carousel-inner {
-  height: 100%;
-  height: -webkit-fill-available;
-  height: fill-available;
+.clients-img{
+  max-width:120px;
+  max-height:100px;
 }
-
-.carousel-item {
-  text-align: center;
-}
-
-.carousel-item img {
-  margin: auto;
-}
-.engine {
-  position: absolute;
-  text-indent: -2400px;
-  text-align: center;
-  padding: 0;
-  top: 0;
-  left: -2400px;
+.p_0m{
+  color:#fff!important;
+  margin-bottom: 0px!important;
 }
